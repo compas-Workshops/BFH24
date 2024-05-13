@@ -15,32 +15,23 @@ If you need help with the installation process, please post a note on the worksh
 
 ## Installation
 
-> **NOTE**: If you're on Windows, all commands below have to be executed in the *Anaconda Prompt* (NOT the *Command Prompt*)
+> **IMPORTANT**: If you're on Windows, all commands below have to be executed in the *Anaconda Prompt* (NOT the *Command Prompt*)
 
 We use `conda` to make sure we have clean, isolated environment for dependencies.
 
-<details><summary>First time using <code>conda</code>?</summary>
-<p>
-
-Make sure you run this at least once:
+First time using <code>conda</code>? Make sure to run this at least once:
 
     (base) conda config --add channels conda-forge
 
-</p>
-</details>
+Then create the workshop environment and install the dependencies:
 
     (base) conda env create -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/env_win.yml
 
-> **NOTE**: If you're on Windows, use `env_win.yml`. On Mac, use `env_osx.yml`.
-
-
-### Activte the environment
-
-    (base)  conda activate bfh24
-    (bfh24)
+> **IMPORTANT**: If you're on Windows, use `env_win.yml`. On Mac, use `env_osx.yml`.
 
 ### Verify installation
 
+    (base) conda activate bfh24
     (bfh24) python -m compas
 
     Yay! COMPAS is installed correctly!
@@ -48,9 +39,3 @@ Make sure you run this at least once:
     COMPAS: 2.1.0
     Python: 3.9.0 (CPython)
     Extensions: ['compas-model', 'compas-viewer', 'compas-occ', 'compas-cra', 'compas-assembly', 'compas-notebook']
-
-### Update installation
-
-To update your environment:
-
-    (bfh24) conda env update -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/environment.yml
