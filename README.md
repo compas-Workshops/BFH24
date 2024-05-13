@@ -7,7 +7,7 @@
 * Minimum OS: Windows 10 Pro or Mac OS Sierra 10.12
 * [Anaconda 3](https://www.anaconda.com/distribution/)
 * [Rhino 7/8](https://www.rhino3d.com/download)
-* [Visual Studio Code](https://code.visualstudio.com/)
+* [Visual Studio Code](https://code.visualstudio.com/) with the `Python` and `Pylance` extensions from Microsoft.
 
 ## Help
 
