@@ -1,0 +1,16 @@
+name: bfh24
+channels:
+  - conda-forge
+dependencies:
+  - python ==3.9
+  - pip
+  - compas
+  - compas_occ
+  - ipopt
+  - pyomo ==6.4.2
+  - pip:
+      - compas_assembly
+      - compas_cra
+      - compas_model
+      - compas_notebook
+      - compas_viewer
