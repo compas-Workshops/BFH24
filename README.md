@@ -29,7 +29,10 @@ Make sure you run this at least once:
 </p>
 </details>
 
-    (base) conda env create -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/environment.yml
+    (base) conda env create -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/env_win.yml
+
+> **NOTE**: If you're on Windows, use `env_win.yml`. On Mac, use `env_osx.yml`.
+
 
 ### Activte the environment
 
