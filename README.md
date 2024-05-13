@@ -21,17 +21,24 @@ We use `conda` to make sure we have clean, isolated environment for dependencies
 
 First time using <code>conda</code>? Make sure to run this at least once:
 
-    (base) conda config --add channels conda-forge
+    conda config --add channels conda-forge
 
 Then create the workshop environment and install the dependencies:
 
-    (base) conda env create -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/env_win.yml
+    conda env create -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/env_win.yml
 
 > **IMPORTANT**: If you're on Windows, use `env_win.yml`. On Mac, use `env_osx.yml`.
 
 ### Verify installation
 
-    (base) conda activate bfh24
+Activate the environment
+
+    conda activate bfh24
+
+> **NOTE**: You should see that your prompt changed from `(base)` to `(bhf24)`
+
+Run the verification command `python -m compas`:
+
     (bfh24) python -m compas
 
     Yay! COMPAS is installed correctly!
