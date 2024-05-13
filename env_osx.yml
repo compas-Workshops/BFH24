@@ -2,7 +2,7 @@ name: bfh24
 channels:
   - conda-forge
 dependencies:
-  - python ==3.9
+  - python ==3.10
   - pip
   - compas
   - compas_occ
@@ -11,6 +11,8 @@ dependencies:
   - pip:
       - compas_assembly
       - compas_cra
+      - compas_fea2
+      - compas_ifc
       - compas_model
       - compas_notebook
       - compas_viewer
