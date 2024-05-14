@@ -1,4 +1,4 @@
-# Discrete Element Modeling to Robotic Fabrication using the COMPAS framework
+# Introduction to COMPAS
 
 [📃 COMPAS docs](https://compas.dev)
 
