@@ -5,7 +5,7 @@
 ## Requirements
 
 * Minimum OS: Windows 10 Pro or Mac OS Sierra 10.12
-* [Anaconda 3](https://www.anaconda.com/distribution/)
+* [Anaconda 3](https://www.anaconda.com/distribution/), or miniconda if you prefer...
 * [Visual Studio Code](https://code.visualstudio.com/) with the `Python` and `Pylance` extensions from Microsoft.
 * [Rhino 7/8](https://www.rhino3d.com/download) (Optional :))
 * [Blender 4.1](https://www.blender.org/download/) (Optional)
@@ -26,9 +26,9 @@ First time using <code>conda</code>? Make sure to run this at least once:
 
 Then create the workshop environment and install the dependencies:
 
-    conda env create -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/env_win.yml
+    conda env create -f https://raw.githubusercontent.com/compas-Workshops/BFH24/main/env.yml
 
-> **IMPORTANT**: If you're on Windows, use `env_win.yml`. On Mac, use `env_osx.yml`.
+> **IMPORTANT**: If you're on Windows, use `env_win.yml`. On Mac or Linux, use `env.yml`.
 
 ### Verify installation
 
