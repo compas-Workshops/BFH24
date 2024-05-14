@@ -1,0 +1,9 @@
+compas >=2.1.1
+compas_assembly
+compas_dr
+compas_fd
+compas_fea2
+compas_ifc
+compas_model
+compas_notebook
+compas_viewer
