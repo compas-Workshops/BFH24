@@ -2,17 +2,21 @@ name: bfh24
 channels:
   - conda-forge
 dependencies:
+  - git
   - python ==3.10
   - pip
-  - compas
-  - compas_occ
+  - compas >=2.1.1
+  - compas_occ >=1.1.0
   - ipopt
   - pyomo ==6.4.2
   - pip:
       - compas_assembly
       - compas_cra
+      - compas_dr
+      - compas_fd
       - compas_fea2
       - compas_ifc
       - compas_model
       - compas_notebook
       - compas_viewer
+      - git+https://github.com/fea2/compas_fea2_opensees.git
