@@ -45,5 +45,5 @@ Run the verification command `python -m compas`:
     Yay! COMPAS is installed correctly!
 
     COMPAS: 2.1.0
-    Python: 3.9.0 (CPython)
-    Extensions: ['compas-model', 'compas-viewer', 'compas-occ', 'compas-cra', 'compas-assembly', 'compas-notebook']
+    Python: 3.10.0 (CPython)
+    Extensions: ['compas-assembly', 'compas', 'compas-fea2', 'compas-model', 'compas-ifc', 'compas-viewer', 'compas-fea2-opensees', 'compas-dr', 'compas-fd', 'compas-occ', 'compas-cra', 'compas-notebook', 'compas-gmsh']
