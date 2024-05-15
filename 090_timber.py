@@ -9,7 +9,7 @@ from compas_timber.model import TimberModel
 from compas_viewer.viewer import Viewer
 
 here = pathlib.Path(__file__).parent
-LINES = here / "lines.json"
+LINES = here / "data" / "lines.json"
 
 # Load centerlines from file
 lines = compas.json_load(LINES)
@@ -39,11 +39,22 @@ TButtJoint.create(model, beams[1], beams[0])
 TButtJoint.create(model, beams[1], beams[3])
 TButtJoint.create(model, beams[2], beams[4])
 
-# draw inflated centerlines
+# =============================================================================
+# Visualisation
+# =============================================================================
+
 viewer = Viewer()
 
-# for beam in model.beams:
-#     viewer.scene.add(beam.shape)
+viewer.renderer.camera.near = 1e0
+viewer.renderer.camera.far = 1e5
+viewer.renderer.camera.pan_delta = 100
+viewer.renderer.config.gridsize = (20000, 20, 20000, 20)
+viewer.renderer.camera.target = [0, 0, 1000]
+viewer.renderer.camera.position = [-3000, -7000, 3000]
+
+# draw center lines
+for beam in model.beams:
+    viewer.scene.add(beam.centerline, linewidth=5, show_points=True)
 
 # draw blanks (including joinery extensions)
 # for beam in model.beams:
@@ -51,7 +62,7 @@ viewer = Viewer()
 
 # draw geometry (with features)
 for beam in model.beams:
-    viewer.scene.add(beam.geometry)
+    viewer.scene.add(beam.geometry, opacity=0.3)
 
 
 viewer.show()
