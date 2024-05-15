@@ -15,8 +15,8 @@ dependencies:
       - compas_dr
       - compas_fd
       - compas_fea2
+      - compas_gmsh
       - compas_ifc
       - compas_model
       - compas_notebook
       - compas_viewer
-      - git+https://github.com/fea2/compas_fea2_opensees.git
